@@ -1,0 +1,71 @@
+@keyframes slideInDown
+  0%
+    transform: translateY(-100%)
+    opacity: 0
+
+  100%
+    transform: translateY(0)
+    opacity: 1
+
+@keyframes slideOutUp
+  0%
+    transform: translateY(0)
+    opacity: 1
+
+  100%
+    transform: translateY(-100%)
+    opacity: 0
+
+// @keyframes zoom-in
+//   from
+//     transform: scale(0.2)
+//     opacity: 0
+
+//   to
+//     transform: scale(1)
+//     opacity: 1
+
+// @keyframes zoom-out
+//   from
+//     transform: scale(1)
+//     opacity: 1
+
+//   to
+//     transform: scale(0.2)
+//     opacity: 0
+
+@keyframes zoom-in-center
+  from
+    transform: translate(-50%) scale(0.2)
+    // transform: translate(-50%) scale(0.2)  translate(-400px)
+    opacity: 0
+
+  to 
+    transform: translate(-50%) scale(1)
+    // transform: translate(-50%) scale(1)  translate(0, 0)
+    opacity: 1
+
+@keyframes zoom-out-center
+  from
+    transform: translate(-50%) scale(1)
+    opacity: 1
+
+  to
+    transform: translate(-50%) scale(0.2)
+    opacity: 0
+
+@layer utilities
+  .animate-slide-in-down
+    animation: slideInDown 0.7s ease forwards
+
+  .animate-slide-out-up
+    animation: slideOutUp 0.7s ease forwards
+
+  .animate-zoom-in-center
+    animation: zoom-in-center 0.5s forwards
+
+  .animate-zoom-out-center
+    animation: zoom-out-center 0.5s forwards
+
+  .mobile-container
+    @apply md:container

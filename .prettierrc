@@ -1,0 +1,14 @@
+{
+  "arrowParens": "always",
+  "jsxSingleQuote": true,
+  "max-len": ["error", 70, 2],
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "endOfLine": "crlf",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindAttributes": ["myClassList"],
+  "tailwindFunctions": ["clsx"]
+}

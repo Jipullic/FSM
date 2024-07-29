@@ -1,0 +1,25 @@
+@import "src/styles/tailwind/tailwind"
+
+.modal-overlay
+  @apply h-full fixed left-0 right-0 top-0 z-40 w-full items-center justify-center overflow-y-auto overflow-x-hidden md:inset-0 md:h-full backdrop-blur-xs
+
+.modal-container
+  @apply relative left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 max-w-2xl transform p-4 md:h-auto
+
+.modal-container-confirm
+  @apply max-w-sm
+
+.modal-content
+  @apply relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5
+
+.modal-header
+  @apply flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600
+
+.modal-header-confirm
+  @apply items-end border-b-0 pb-0 -mb-8
+
+.modal-title
+  @apply text-lg font-semibold
+
+.modal-close-button
+  @apply ml-auto inline-flex items-center rounded-lg bg-transparent p-2.5 text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white

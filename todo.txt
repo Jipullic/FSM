@@ -1,0 +1,11 @@
+[X] alert
+[ ] visible/hidden password
+[x] flex box in safari
+[x] rest and className (Button, Input, Skeleton and other)
+[x] boundary error
+[x] freez when server off
+[x] show skeleton when loading in table
+[x] selection table in function generic utils (all table columns) 
+[x] crush when error server and click on checkbox in table header
+[ ] в модальном окне исправить tabIndex
+[ ] подумать - стоит ли добавлять tailwind-merge

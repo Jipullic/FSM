@@ -1,0 +1,3 @@
+import { APPLICATION_PAGE_SIZE } from './queries'
+
+export const SKELETON_COUNT_IN_LOADING_TABLE = APPLICATION_PAGE_SIZE

@@ -1,0 +1,19 @@
+.button
+  @apply rounded-lg px-4 py-2 font-medium shadow-xl
+
+.primary
+  @apply text-white bg-gradient-to-r from-primary to-blue-800 shadow-gray-300 dark:shadow-blue-900 dark:shadow-md
+
+  &:hover
+    @apply from-blue-800 to-blue-800
+
+  &:focus
+    @apply ring-4 ring-blue-300 outline-none
+
+.secondary
+  @apply hover:text-blue-700 flex items-center justify-center border border-gray-200 bg-white px-4 py-2 font-medium hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700
+
+  // @apply text-white bg-gradient-to-r from-secondary to-orange-600
+
+  // &:hover
+  //   @apply from-secondary to-secondary

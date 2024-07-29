@@ -1,0 +1,17 @@
+@import "src/styles/global"
+
+.user-menu-container
+  @apply md:relative order-first flex items-center md:order-2
+
+// TODO: поменять md:-right-3 на 3 из $nav-padding
+.user-menu
+  @apply absolute z-20 left-0 md:-right-3
+  top: $nav-height + $nav-padding
+
+.user-menu-button
+  @apply relative flex rounded-full bg-gray-200 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600
+
+.image
+  @apply p-2
+  height: $nav-height
+  width: $nav-height

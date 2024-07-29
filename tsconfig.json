@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true, // type в import
+    "isolatedModules": true,
+    "noEmit": false,
+    "noEmitOnError": false,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "manifest.ts",
+    "eslint-config",
+    "vite.config.ts",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "eslint.config.js"
+  ]
+}
